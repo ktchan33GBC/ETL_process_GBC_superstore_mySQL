@@ -1,0 +1,22 @@
+####################################################
+### for Windows user
+### run below script in cmd
+### to get a copy of latest db in your localhost
+####################################################
+
+# change below path to installation dir of MySQL
+# to use mysql command in cmd
+PATH = C:\Program Files\MySQL\MySQL Server 8.0\bin;%PATH%
+
+# import mysql dump db to your localhost
+# change gbc_superstore to your db name
+mysql -u root -p gbc_superstore < grp1_db_final.sql
+
+
+# for reference only
+# export/dump localhost db
+mysqldump -u root -p gbc_superstore > filename.sql
+
+
+
+
